@@ -11,8 +11,8 @@ defineProps({ loading: Boolean });
 
 <style scoped>
 button {
-  background: #2196f3;
-  color: #fff;
+  background: var(--button-bg);
+  color: var(--button-text);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -20,6 +20,7 @@ button {
 }
 button:disabled {
   background: #90caf9;
+  color: var(--button-text);
   cursor: not-allowed;
 }
 </style>

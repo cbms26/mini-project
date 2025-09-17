@@ -4,8 +4,11 @@ import MegaportLogo from '../assets/megaport-logo.svg';
 
 <template>
     <div class="logo-header">
-        <h1 class="logo-heading text-3xl font-bold">Megaport Portal</h1>
-        <p>Login to your Account</p>
+      <h1 class="logo-heading text-3xl font-bold">Megaport Portal</h1>
+      <p>Login to your Account</p>
+    </div>
+    <div class="theme-toggle">
+      <ThemeToggle />
     </div>
 </template>
 
@@ -13,6 +16,7 @@ import MegaportLogo from '../assets/megaport-logo.svg';
 .logo-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -25,7 +29,13 @@ import MegaportLogo from '../assets/megaport-logo.svg';
   font-weight: 700;
 }
 .logo-heading {
-    text-align: center;
-    color: #000000;
+  text-align: center;
+  color: var(--topnav-text);
+}
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 </style>

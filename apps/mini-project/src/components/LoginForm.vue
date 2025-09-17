@@ -33,11 +33,10 @@ function submit() {
 <style>
 .login-form {
   max-width: 320px;
-  margin: 60px auto;
   padding: 2rem;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: var(--login-card-bg);
+  color: var(--login-card-text);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -55,7 +54,7 @@ function submit() {
 .login-form input[type="email"]:focus,
 .login-form input[type="password"]:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: var(--focus, #3b82f6);
 }
 
 .login-form .remember {

@@ -3,7 +3,6 @@
 
 import Logo from '../components/Logo.vue';
 import LoginForm from '../components/LoginForm.vue';
-import ThemeToggle from '../components/ThemeToggle.vue'
 import ErrorMessage from '../components/ErrorMessage.vue'
 import { useAuth } from '../composables/useAuth'
 
@@ -19,7 +18,6 @@ function handleLogin({ email, password }) {
     <div class="login-card">
       <Logo />
       <LoginForm @login="handleLogin" />
-      <ThemeToggle />
       <ErrorMessage v-if="error" :message="error" />
     </div>
   </div>
@@ -31,10 +29,12 @@ function handleLogin({ email, password }) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f4f8; 
+  background: var(--login-bg);
+  color: var(--login-card-text);
 }
 .login-card {
-  background: #fff;
+  background: var(--login-card-bg);
+  color: var(--login-card-text);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);

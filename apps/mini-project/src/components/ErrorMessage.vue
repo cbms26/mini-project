@@ -6,7 +6,7 @@ defineProps(['message'])
 </script>
 <style scoped>
 .error {
-  color: #f44336;
+  color: var(--error, #f44336);
   margin-top: 0.5rem;
 }
 </style>

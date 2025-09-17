@@ -50,6 +50,7 @@ function handleNavigate(section) {
 main {
   flex: 1;
   padding: 2rem;
-  background: #f0f4f8;
+  background: var(--card-bg);
+  color: var(--card-text);
 }
 </style>

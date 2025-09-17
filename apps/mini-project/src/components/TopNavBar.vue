@@ -22,8 +22,8 @@ function logout() {
 
 <style scoped>
 .topnav {
-  background: #2196f3;
-  color: #fff;
+  background: var(--topnav-bg);
+  color: var(--topnav-text);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -39,8 +39,8 @@ function logout() {
   gap: 1rem;
 }
 .logout-btn {
-  background: #fff;
-  color: #2196f3;
+  background: var(--button-bg);
+  color: var(--button-text);
   border: none;
   border-radius: 4px;
   padding: 0.5rem 1rem;

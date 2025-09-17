@@ -7,17 +7,59 @@ html {
   tab-size: 4;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: inherit;
   line-height: inherit;
   margin: 0;
+  /* Global fallback */
+  --bg: #f0f4f8;
+  --text: #222;
+  /* Sidebar */
+  --sidebar-bg: #5885b9;
+  --sidebar-text: #fff;
+  --sidebar-hamburger-icon: #868585;
+  /* TopNavBar */
+  --topnav-bg: #e5e7eb;
+  --topnav-text:
+    #222;
+  /* Card/Widget */
+  --card-bg: #fff;
+  --card-text: #222;
+  /* Button */
+  --button-bg: #2196f3;
+  --button-text: #fff;
+  /* Login */
+  --login-bg: #f0f4f8;
+  --login-card-bg: #fff;
+  --login-card-text: #222;
+  background: var(--bg);
+  color: var(--text);
 }
+
+body.dark-mode {
+  --bg: #040404;
+  --text: #fff;
+  --sidebar-bg: #0c1124;
+  --sidebar-text: #e0e0e0;
+  --topnav-bg: #0c1124;
+  --topnav-text: #e0e0e0;
+  --card-bg: #37474f;
+  --card-text: #e0e0e0;
+  --button-bg: #90caf9;
+  --button-text: #263238;
+  --login-bg: #121212;
+  --login-card-bg: #263238;
+  --login-card-text: #e0e0e0;
+}
+
 h1,
 h2,
 p,
 pre {
   margin: 0;
 }
+
 *,
 ::before,
 ::after {
@@ -26,15 +68,18 @@ pre {
   border-style: solid;
   border-color: currentColor;
 }
+
 h1,
 h2 {
   font-size: inherit;
   font-weight: inherit;
 }
+
 a {
   color: inherit;
   text-decoration: inherit;
 }
+
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
