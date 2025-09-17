@@ -4,9 +4,9 @@ This is a very simple portal built with Nuxt 3, Vue 3, and Nx workspace. The des
 
 ## Features
 
-- Login and dashboard pages
+- Login form and mock authentication (user: user@gmail.com, password: user)
+- Dashboard with widget layout
 - Sidebar navigation and top navigation bar
-- Basic authentication using a composable
 - Multiple dashboard widgets and sections
 
 ## Tools Used
@@ -41,7 +41,7 @@ This is a very simple portal built with Nuxt 3, Vue 3, and Nx workspace. The des
    npx nx serve mini-project
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) or the provided URL when starting the dev server in your browser.
+4. Open [http://localhost:4200](http://localhost:4200) or the provided URL when starting the dev server in your browser.
 
 ---
 
