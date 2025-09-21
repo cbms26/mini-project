@@ -29,18 +29,32 @@ function handleLogin({ email, password }) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--login-bg);
-  color: var(--login-card-text);
+  background: #f3f4f6;
 }
+
 .login-card {
-  background: var(--login-card-bg);
-  color: var(--login-card-text);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);
-  width: 350px;
+  background: #fff;
+  color: #222;
+  padding: 2.2rem 2.2rem 1.7rem 2.2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  width: 370px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.1rem;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+
+
+
+.login-card > * {
+  width: 100%;
+}
+
+.ErrorMessage {
+  margin-top: 0.5rem;
 }
 </style>

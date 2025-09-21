@@ -49,4 +49,11 @@ This is a very simple portal built with Nuxt 3, Vue 3, and Nx workspace. The des
 
 **Testing tools included:** Vitest, Playwright (not yet used)
 
-**Purpose:** Simple design, for learning Nx workspace, Vue, and Nuxt.
+**Purpose:**
+This project was created to familiarize with:
+
+- Nx monorepo workflows and best practices.
+- Vue 3 and Nuxt application structure.
+- Modern testing with Vitest and Playwright.
+- Scalable frontend architecture in a monorepo.
+- License
