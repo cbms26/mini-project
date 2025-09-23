@@ -1,9 +1,9 @@
 <script setup>
-import { NuxtPage } from '#components';
+import IndexPage from './pages/index.vue';
 </script>
 
 <template>
-  <NuxtPage />
+  <IndexPage />
 </template>
 
 
