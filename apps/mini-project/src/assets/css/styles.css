@@ -12,45 +12,125 @@ body {
   font-family: inherit;
   line-height: inherit;
   margin: 0;
-  /* Global fallback */
-  --bg: #f0f4f8;
-  --text: #222;
+
+  /* Light theme variables */
+  --bg: #f3f4f6;
+  --text: #222222;
+  --text-secondary: #666666;
+  --text-muted: #888888;
+
+  /* Card/Container variables */
+  --card-bg: #ffffff;
+  --card-text: #222222;
+  --card-border: #e5e7eb;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Input variables */
+  --input-bg: #f9fafb;
+  --input-border: #cbd5e1;
+  --input-border-focus: #2563eb;
+  --input-text: #222222;
+  --input-placeholder: #9ca3af;
+  --input-shadow-focus: rgba(37, 99, 235, 0.1);
+
+  /* Button variables */
+  --button-primary-bg: #2563eb;
+  --button-primary-hover: #1d4ed8;
+  --button-primary-text: #ffffff;
+  --button-primary-shadow: rgba(37, 99, 235, 0.2);
+  --button-primary-shadow-hover: rgba(37, 99, 235, 0.3);
+
+  /* Theme toggle variables */
+  --toggle-bg: #f9fafb;
+  --toggle-border: #e5e7eb;
+  --toggle-text: #222222;
+  --toggle-hover-bg: #e5e7eb;
+  --toggle-hover-border: #2563eb;
+  --toggle-hover-text: #1746a2;
+
   /* Sidebar */
   --sidebar-bg: #5885b9;
   --sidebar-text: #fff;
   --sidebar-hamburger-icon: #868585;
+
   /* TopNavBar */
   --topnav-bg: #e5e7eb;
-  --topnav-text:
-    #222;
-  /* Card/Widget */
-  --card-bg: #fff;
-  --card-text: #222;
-  /* Button */
-  --button-bg: #2196f3;
-  --button-text: #fff;
-  /* Login */
-  --login-bg: #f0f4f8;
-  --login-card-bg: #fff;
-  --login-card-text: #222;
+  --topnav-text: #222;
+
+  /* Login specific */
+  --login-bg: #f3f4f6;
+  --login-card-bg: #ffffff;
+  --login-card-text: #222222;
+
+  /* Error/Success states */
+  --error-color: #dc2626;
+  --error-bg: #fef2f2;
+  --error-border: #fecaca;
+  --success-color: #059669;
+  --success-bg: #ecfdf5;
+  --success-border: #a7f3d0;
+
   background: var(--bg);
   color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode {
-  --bg: #040404;
-  --text: #fff;
+  /* Dark theme variables */
+  --bg: #111827;
+  --text: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+
+  /* Card/Container variables */
+  --card-bg: #1f2937;
+  --card-text: #f9fafb;
+  --card-border: #374151;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Input variables */
+  --input-bg: #111827;
+  --input-border: #4b5563;
+  --input-border-focus: #60a5fa;
+  --input-text: #f9fafb;
+  --input-placeholder: #6b7280;
+  --input-shadow-focus: rgba(96, 165, 250, 0.2);
+
+  /* Button variables */
+  --button-primary-bg: #2563eb;
+  --button-primary-hover: #3b82f6;
+  --button-primary-text: #ffffff;
+  --button-primary-shadow: rgba(37, 99, 235, 0.3);
+  --button-primary-shadow-hover: rgba(37, 99, 235, 0.4);
+
+  /* Theme toggle variables */
+  --toggle-bg: #374151;
+  --toggle-border: #4b5563;
+  --toggle-text: #f9fafb;
+  --toggle-hover-bg: #4b5563;
+  --toggle-hover-border: #60a5fa;
+  --toggle-hover-text: #60a5fa;
+
+  /* Sidebar */
   --sidebar-bg: #0c1124;
   --sidebar-text: #e0e0e0;
+
+  /* TopNavBar */
   --topnav-bg: #0c1124;
   --topnav-text: #e0e0e0;
-  --card-bg: #37474f;
-  --card-text: #e0e0e0;
-  --button-bg: #90caf9;
-  --button-text: #263238;
-  --login-bg: #121212;
-  --login-card-bg: #263238;
-  --login-card-text: #e0e0e0;
+
+  /* Login specific */
+  --login-bg: #111827;
+  --login-card-bg: #1f2937;
+  --login-card-text: #f9fafb;
+
+  /* Error/Success states */
+  --error-color: #f87171;
+  --error-bg: #1f2937;
+  --error-border: #374151;
+  --success-color: #34d399;
+  --success-bg: #1f2937;
+  --success-border: #374151;
 }
 
 h1,

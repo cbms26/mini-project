@@ -32,73 +32,86 @@ function submit() {
 
 <style>
 .login-form {
-  max-width: 340px;
-  margin: 0 auto;
-  padding: 2rem 2.5rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  color: #222;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--card-text);
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
   font-family: 'Segoe UI', 'Arial', sans-serif;
 }
 
 .login-form input[type="email"],
 .login-form input[type="password"] {
-  padding: 0.7rem 0.9rem;
-  border: 1px solid #cbd5e1;
-  border-radius: 3px;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
   font-size: 1rem;
-  background: #f9fafb;
-  color: #222;
-  transition: border-color 0.2s;
+  background: var(--input-bg);
+  color: var(--input-text);
+  transition: all 0.2s ease;
+  font-family: inherit;
 }
 
 .login-form input[type="email"]:focus,
 .login-form input[type="password"]:focus {
   outline: none;
-  border-color: #2563eb;
-  background: #fff;
+  border-color: var(--input-border-focus);
+  background: var(--card-bg);
+  box-shadow: 0 0 0 3px var(--input-shadow-focus);
 }
 
 .login-form label.remember {
   display: flex;
   align-items: center;
-  font-size: 0.97rem;
-  color: #444;
+  font-size: 0.975rem;
+  color: var(--text-secondary);
   user-select: none;
+  margin: 0.25rem 0;
 }
 
 .login-form .remember input {
-  margin-right: 0.5rem;
-  accent-color: #2563eb;
+  margin-right: 0.75rem;
+  accent-color: var(--input-border-focus);
+  transform: scale(1.1);
 }
 
 .login-form button {
   width: 100%;
-  padding: 0.85rem;
-  background: #2563eb;
-  color: #fff;
+  padding: 0.875rem;
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
   border: none;
-  border-radius: 3px;
-  font-size: 1.07rem;
-  font-weight: 500;
+  border-radius: 6px;
+  font-size: 1.075rem;
+  font-weight: 600;
   letter-spacing: 0.01em;
   cursor: pointer;
-  transition: background 0.2s;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px var(--button-primary-shadow);
+  font-family: inherit;
+  margin-top: 0.5rem;
 }
 
 .login-form button:hover,
 .login-form button:focus {
-  background: #1746a2;
+  background: var(--button-primary-hover);
+  box-shadow: 0 4px 8px var(--button-primary-shadow-hover);
+  transform: translateY(-1px);
+}
+
+.login-form button:active {
+  transform: translateY(0);
 }
 
 .login-form input::placeholder {
-  color: #888;
+  color: var(--input-placeholder);
   opacity: 1;
 }
 </style>

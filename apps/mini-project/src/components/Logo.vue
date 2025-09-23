@@ -1,41 +1,50 @@
-<script>
-import MegaportLogo from '../assets/megaport-logo.svg';
+<script setup>
+import ThemeToggle from './ThemeToggle.vue';
 </script>
 
 <template>
-    <div class="logo-header">
-      <h1 class="logo-heading text-3xl font-bold">Megaport Portal</h1>
-      <p>Login to your Account</p>
-    </div>
-    <div class="theme-toggle">
-      <ThemeToggle />
+    <div class="logo-section">
+      <h1 class="logo-heading">Megaport Portal</h1>
+      <p class="login-subtitle">Login to your Account</p>
+      <div class="theme-toggle-wrapper">
+        <ThemeToggle />
+      </div>
     </div>
 </template>
 
 <style>
-.logo-header {
+.logo-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-.font-bold {
-  font-weight: 700;
-}
+
 .logo-heading {
-  text-align: center;
-  color: var(--topnav-text);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--card-text);
+  letter-spacing: -0.02em;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  transition: color 0.3s ease;
 }
-.theme-toggle {
+
+.login-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+.theme-toggle-wrapper {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  margin-bottom: 1rem;
 }
 </style>

@@ -37,7 +37,6 @@ function handleNavigate(section) {
 </template>
 
 <style scoped>
-/* Layout: TopNavBar on top, SidebarNav left, main content right */
 .dashboard-layout {
   display: flex;
   flex-direction: column;
